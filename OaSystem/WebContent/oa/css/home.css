@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+body，ul, li, iframe {
+    margin: 0;
+    padding: 0;
+}
+
+.gsbg {
+    background-color: #313E60;
+    padding: 18px;
+}
+
+.bg {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /*文字阴影  */
+    margin: auto;
+    color: #FFF;
+}
+
+#daohan {
+    float: right;
+    margin-top: -23px;
+
+}
+
+#daohan img {
+    width: 20px;
+}
+
+#daohan a {
+    text-decoration: none;
+
+}
+
+#daohan ul {
+    min-width: inherit;
+
+}
+
+#content {
+    width: 100%;
+    height: 800px;
+}
+
+#shu {
+    width: 15%;
+    height: 800px;
+    background: url("../images/left.png") no-repeat;
+    background-size: 100% 800px;
+    text-indent: 15px;
+    float: left;
+    border: 1px solid slateblue;
+}
+
+#buttom-right {
+    margin:10px;
+    float: left;
+    width: 80%;
+    height: 800px;
+}
+
+#iframe-left {
+    float: left;
+    height: 800px;
+    width: 15%;
+    background: url("../images/left.png") no-repeat;
+    background-size: 100% 800px;
+    text-indent: 15px;
+    float: left;
+}

@@ -1,0 +1,51 @@
+body, div, ul, li{
+    margin: 0 ;
+    padding: 0 ;
+}
+.content-left{
+    height:10%;
+    width: 69%;
+}
+#content ul li a{
+    display-list: none;
+    margin-left: 10px;
+    align-content: center;
+    color: #fffffa;
+    padding-top: -20px;
+}
+a{
+    font-size: 15px;
+    color: #fffffa;
+    text-decoration: none;
+}
+ul{
+    list-style:none;
+   background-color:#2D313D;
+    background-size: 100% 900px;
+    line-height: 50px;
+    margin-left: -13px;
+    padding-left: 30%;
+}
+.uls{
+    margin-left: 0.5%;
+    padding-top: -5%;
+    height:8%;
+    width:68%;
+}
+.uls li{
+    margin-left: -10px;
+    width:69%;
+}
+.uls li a{
+    font-size:13px;
+    color: #fffffa;
+}
+.uls li a:hover{
+    font-size: 16px;
+}
+.content-left a:hover{
+    font-size: 20px;
+    color: aqua;
+}
+
+

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/home.css" rel="stylesheet"/>
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="js/bootstrap.min.js"></script>
+    <title>九星OA后台管理</title>
+</head>
+
+<body>
+<div>
+    <div class="gsbg">
+        <h3 class="bg">江西九星科技有限公司</h3>
+        <div class="dropdown" id="daohan">
+            <!--下拉导航--->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <!--自动触发脚本 -->
+                <img src="photo/profle.png"/>
+                <font color="#FFFFFF">admin</font>
+                <b class="caret"></b><!--下拉图标 -->
+                <ul class="dropdown-menu">
+                    <li><a href="后台功能/welcome.html" target="left">首页</a></li>
+                    <li><a href="#">个人</a></li>
+                    <li><a href="#">办公</a></li>
+                    <li><a href="login.html">退出</a></li>
+                </ul>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<div id="content">
+    <!--下-左-->
+    <div id="buttom-shu">
+        <iframe src="后台功能/menu.html" frameborder="0" height="100%" width="15%" id="iframe-left"></iframe>
+    </div>
+    <!--下-右-->
+    <div id="buttom-right">
+        <iframe src="后台功能/welcome.html" frameborder="0" height="100%" width="100%" name="left"></iframe>
+    </div>
+</div>
+</body>
+</html>
