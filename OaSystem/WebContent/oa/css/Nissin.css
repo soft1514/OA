@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+.right{background-image:url(../images/1.jpg)}
+#form1{width:100%;
+	height:30px}
+#form1 input{padding:5px;
+	margin-left:50%}
+#ta1{width:300px; height:100px;}
+#ta1 input{ width:100%; height:100%}
+#jihua{ height:100%}
+#jihua form{padding-left:50%; padding-top:10%}
+.in{ width:100%; height:100%}
+.cla{ float:right}

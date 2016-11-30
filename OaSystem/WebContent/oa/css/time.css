@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding:0; margin:0;}
+
+#ta1{width:33%; height:100%;
+	float:left}
+#ta1 tr td{height:50px;font-size:14px}
+#ta2{width:33%; height:100%;
+	float:left;
+	margin-left:8px}
+#ta2 tr td{height:50px;
+font-size:14px}
+#ta3{width:33%; height:100%;
+	float:right}
+#ta3 tr td{
+	height:50px;
+font-size:14px}
+.right{background-image:url(../images/2.jpg);text-align:center}
+#tu{background-image:url(../images/3.jpg);
+	height:50px;}
+input{ width:100%; height:100%}
+
+
