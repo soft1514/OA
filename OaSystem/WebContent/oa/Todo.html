@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta http-equiv=“X-UA-Compatible” content=“IE=9″>
+  <meta http-equiv=“X-UA-Compatible” content=“chrome=1"/>
+<title>主界面</title>
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="css/index.css" type="text/css"/>
+  <link rel="stylesheet" href="css/Todo.css" type="text/css"/>
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script src="js/Todo.js"></script>
+  <link rel="stylesheet" href="css/menu.css" type="text/css"/>
+</head>
+
+<body>
+<!--大容器-->
+<div id="main"> 
+  <!--上-->
+  <div id="top"> 
+    <!--上 左-->
+    <div class="t_left"><img src="images/jiu.png" class="t_img"/>
+      <h1><span>欢迎</span>来到<span style="font-style:oblique; font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#0F0">办公管理</span>系统</h1>
+    </div>
+    <!--上 右-->
+    <div class="t_right">
+      <table id="table">
+        <tr class="tr">
+          <td><a href=""><img src="images/s.png"/></a></td>
+          <td><a href=""><img src="images/g.png"/></a></td>
+          <td><a href=""><img src="images/b.png"/></a></td>
+          <td><a href=""><img src="images/t.png"/></a></td>
+        </tr>
+        <tr class="tr">
+          <td class="top-right"><a href="">首页</a></td>
+          <td class="top-right"><a href="">个人</a></td>
+          <td class="top-right"><a href="">办公</a></td>
+          <td class="top-right"><a href="">退出</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<!--下-->
+<div id="under"> 
+  <!--下 左-->
+  <div class="left">
+     <div id="content">
+    <!--登录信息-->
+    <div id="content-left1">
+
+    </div>
+    <!--系统管理-->
+    <ul class="content-left"><a href="javascript:show(1)">系统管理</a></ul>
+    <ul id="1" style="display:none;" class="uls">
+        <li><a href="#">部门管理</a></li>
+        <li><a href="#">人员管理</a></li>
+        <li><a href="#">职务管理</a></li>
+    </ul>
+    <!--我的工作-->
+    <ul class="content-left"><a href="javascript:show(2)">我的工作</a></ul>
+    <ul id="2" style="display:none;" class="uls">
+        <li><a href="Todo.html">待办事项</a></li>
+        <li><a href="time.html">我的考勤</a></li>
+        <li><a href="Nissin.html">我的日清</a></li>
+    </ul>
+    <!--个人办公-->
+    <ul class="content-left"><a href="javascript:show(3)">个人办公</a></ul>
+    <ul id="3" style="display:none;" class="uls">
+        <li><a href="#">借款</a></li>
+        <li><a href="#">申请公章</a></li>
+        <li><a href="#">出差申请</a></li>
+        <li><a href="#">报销申请</a></li>
+        <li><a href="#">车位申请</a></li>
+        <li><a href="#">书籍管理</a></li>
+        <li><a href="#">申请离职</a></li>
+    </ul>
+    <!--会议管理-->
+    <ul class="content-left"><a href="javascript:show(4)">会议管理</a></ul>
+    <ul id="4" style="display:none;" class="uls">
+        <li><a href="#">管理会议</a></li>
+        <li><a href="#">会议室管理</a></li>
+    </ul>
+    <!--信息交流-->
+    <ul class="content-left"><a href="javascript:show(5)">信息交流</a></ul>
+    <ul id="5" style="display:none;" class="uls">
+        <li><a href="#">发送邮件</a></li>
+        <li><a href="#">收件箱</a></li>
+        <li><a href="#">已发送</a></li>
+        <li><a href="#">垃圾箱</a></li>
+    </ul>
+    <!--用户管理-->
+    <ul class="content-left"><a href="javascript:show(6)">个人设置</a></ul>
+    <ul id="6" style="display:none;" class="uls">
+        <li><a href="#">修改密码</a></li>
+        <li><a href="#">登录日志</a></li>
+    </ul>
+</div>
+  <!--下 右-->
+  </div>
+  <div class="right">
+  <form action="" method="post">
+        <div>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;委托人员代理我的工作:</span></br></br></br>
+            	<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;委托人员:</span>
+                <span>
+                    <input type="text"/>
+                </span>&nbsp;
+                部门:
+                <span>
+               	    <select name=""> 
+                        <option value="0">行政部</option> 
+                        <option value="1">财务部</option>
+                        <option value="3">研发部</option>
+                        <option value="4">测试部</option>
+                        <option value="5">实施部</option>
+                        <option value="6">人力资源部</option> 
+                    </select> 
+                </span>
+        </div></br></br></br>
+  		<div style="width:100%; margin:10px auto;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;代理时间：<input onClick="laydate()">到<input onClick="laydate()"></br></br></br></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="提交领导">
+		</div>
+        
+  </form>
+  </div>
+</div>
+</body>
+</html>

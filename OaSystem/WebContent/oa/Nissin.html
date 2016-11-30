@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta http-equiv=“X-UA-Compatible” content=“IE=9″>
+  <meta http-equiv=“X-UA-Compatible” content="chrome=1"/>
+<title>主界面</title>
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="css/index.css" type="text/css"/>
+  <link rel="stylesheet" href="css/Nissin.css" type="text/css"/>
+  <script type="text/javascript" src="js/menu.js"></script>
+  <link rel="stylesheet" href="css/menu.css" type="text/css"/>
+</head>
+
+<body>
+<!--大容器-->
+<div id="main"> 
+  <!--上-->
+  <div id="top"> 
+    <!--上 左-->
+    <div class="t_left"><img src="images/jiu.png" class="t_img"/>
+      <h1><span>欢迎</span>来到<span style="font-style:oblique; font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#0F0">办公管理</span>系统</h1>
+    </div>
+    <!--上 右-->
+    <div class="t_right">
+      <table id="table">
+        <tr class="tr">
+          <td><a href=""><img src="images/s.png"/></a></td>
+          <td><a href=""><img src="images/g.png"/></a></td>
+          <td><a href=""><img src="images/b.png"/></a></td>
+          <td><a href=""><img src="images/t.png"/></a></td>
+        </tr>
+        <tr class="tr">
+          <td class="top-right"><a href="">首页</a></td>
+          <td class="top-right"><a href="">个人</a></td>
+          <td class="top-right"><a href="">办公</a></td>
+          <td class="top-right"><a href="">退出</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<!--下-->
+<div id="under"> 
+  <!--下 左-->
+  <div class="left">
+     <div id="content">
+    <!--登录信息-->
+    <div id="content-left1">
+
+    </div>
+    <!--系统管理-->
+    <ul class="content-left"><a href="javascript:show(1)">系统管理</a></ul>
+    <ul id="1" style="display:none;" class="uls">
+        <li><a href="#">部门管理</a></li>
+        <li><a href="#">人员管理</a></li>
+        <li><a href="#">职务管理</a></li>
+    </ul>
+    <!--我的工作-->
+    <ul class="content-left"><a href="javascript:show(2)">我的工作</a></ul>
+    <ul id="2" style="display:none;" class="uls">
+        <li><a href="Todo.html">待办事项</a></li>
+        <li><a href="time.html">我的考勤</a></li>
+        <li><a href="Nissin">我的日清</a></li>
+    </ul>
+    <!--个人办公-->
+    <ul class="content-left"><a href="javascript:show(3)">个人办公</a></ul>
+    <ul id="3" style="display:none;" class="uls">
+        <li><a href="#">借款</a></li>
+        <li><a href="#">申请公章</a></li>
+        <li><a href="#">出差申请</a></li>
+        <li><a href="#">报销申请</a></li>
+        <li><a href="#">车位申请</a></li>
+        <li><a href="#">书籍管理</a></li>
+        <li><a href="#">申请离职</a></li>
+    </ul>
+    <!--会议管理-->
+    <ul class="content-left"><a href="javascript:show(4)">会议管理</a></ul>
+    <ul id="4" style="display:none;" class="uls">
+        <li><a href="#">管理会议</a></li>
+        <li><a href="#">会议室管理</a></li>
+    </ul>
+    <!--信息交流-->
+    <ul class="content-left"><a href="javascript:show(5)">信息交流</a></ul>
+    <ul id="5" style="display:none;" class="uls">
+        <li><a href="#">发送邮件</a></li>
+        <li><a href="#">收件箱</a></li>
+        <li><a href="#">已发送</a></li>
+        <li><a href="#">垃圾箱</a></li>
+    </ul>
+    <!--用户管理-->
+    <ul class="content-left"><a href="javascript:show(6)">个人设置</a></ul>
+    <ul id="6" style="display:none;" class="uls">
+        <li><a href="#">修改密码</a></li>
+        <li><a href="#">登录日志</a></li>
+    </ul>
+</div>
+  <!--下 右-->
+  </div>
+  <div class="right">
+  		<div id="Nissin">
+        
+        	<div>
+                <form id="form1" action="" method="post">
+                    <input type="submit" value="填写日清">
+                </form>
+            </div>
+            
+            <div>
+            	<form id="form2" action="" method="post">
+                <input type="submit" value="收回">
+                	<table id="ta1" border="1" style='border-collapse:collapse;' cellspacing='0' bordercolor='black'>
+                      <tr>
+                        <td>填写日期</td>
+                        <td>标题</td>
+                        <td>状态</td>
+                	  </tr>
+                       <tr>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                	  </tr>
+                       <tr>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                	  </tr>
+                    </table>
+                </form>
+            </div>
+            
+            <div id="jihua">
+            	<form id="form3" action="" method="post">
+                	<table id="ta2" border="0" style='border-collapse:collapse;' cellspacing='0' bordercolor='black'>
+                      <tr>
+                        <td>标题：</td>
+                        <td><input class="in" type="text"/></td>
+                      </tr>
+                      <tr>
+                        <td>工作内容：</td>
+                        <td><textarea style="width:200px;height:80px;"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td>明日计划：</td>
+                        <td><textarea style="width:200px;height:80px;"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td class="cla"><input type="submit" value="发送给领导"></td>
+                      </tr>
+                    </table>
+                </form>
+            </div>
+            
+        </div>
+  </div>
+</div>
+</body>
+</html>
