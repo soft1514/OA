@@ -20,7 +20,7 @@ a{
 }
 ul{
     list-style:none;
-   background-color:#2D313D;
+    background: url("../images/left.png") no-repeat;
     background-size: 100% 900px;
     line-height: 50px;
     margin-left: -13px;

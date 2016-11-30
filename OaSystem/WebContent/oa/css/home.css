@@ -1,69 +1,85 @@
 @charset "utf-8";
 /* CSS Document */
-body，ul, li, iframe {
-    margin: 0;
-    padding: 0;
+body{
+      margin:0;
+      padding:0 ;
+ }
+.gsbg{background-color:#313E60; padding: 18px;
+	
 }
-
-.gsbg {
-    background-color: #313E60;
-    padding: 18px;
+.bg{
+	 text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);/*文字阴影  */
+	 margin:auto;
+	color:#FFF;
+	
+	 
+	}
+	
+#daohan{
+float: right;
+margin-top:-23px;
+	
 }
-
-.bg {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /*文字阴影  */
-    margin: auto;
-    color: #FFF;
+#daohan img{
+	width:20px;
+	
+	
 }
-
-#daohan {
-    float: right;
-    margin-top: -23px;
-
+	#daohan a{
+		text-decoration:none;
+	
+	}
+	#daohan ul{
+		min-width:inherit;
+		
+	}
+	#shu{
+		background-color:#2D313D;
+		width:280px;
+		height:800px;
+		text-indent:15px;
+	}
+	#shu h4{
+	color:#FFF;	
+		
+	}
+	#1{
+		color:#FFF;
+	}
+	#2{
+		color:#FFF;
+	}
+	
+#boder{
+	border:1px solid #666;
+	border-radius:20px;
+	line-height:25px;
+	margin:0;
 }
-
-#daohan img {
-    width: 20px;
-}
-
-#daohan a {
-    text-decoration: none;
-
-}
-
-#daohan ul {
-    min-width: inherit;
-
-}
-
-#content {
-    width: 100%;
-    height: 800px;
-}
-
-#shu {
-    width: 15%;
-    height: 800px;
-    background: url("../images/left.png") no-repeat;
-    background-size: 100% 800px;
-    text-indent: 15px;
-    float: left;
-    border: 1px solid slateblue;
-}
-
-#buttom-right {
-    margin:10px;
-    float: left;
-    width: 80%;
-    height: 800px;
-}
-
-#iframe-left {
-    float: left;
-    height: 800px;
-    width: 15%;
-    background: url("../images/left.png") no-repeat;
-    background-size: 100% 800px;
-    text-indent: 15px;
-    float: left;
-}
+#boder a{
+	color:#FFF;
+	text-decoration:none;
+	
+	}
+	#boder a:hover{
+		color:#00F;
+		
+	}
+	#cr{
+		
+		float:right;
+		width:10px;
+		height:20px;
+		
+	}
+	
+	#lefts{
+		float: left;
+	}
+	#rights{
+		background: #000000;
+		width:81%;
+		height:800px;
+		text-indent:15px;
+		float: left;
+	}
