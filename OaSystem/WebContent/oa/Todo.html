@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="css/index.css" type="text/css"/>
   <link rel="stylesheet" href="css/Todo.css" type="text/css"/>
   <script type="text/javascript" src="js/menu.js"></script>
-  <script src="js/Todo.js"></script>
+  <script type="text/javascript" language="javascript" src="js/eye-all.js"></script>
+  <script type="text/javascript" language="javascript" src="js/eye-base.js"></script>
   <link rel="stylesheet" href="css/menu.css" type="text/css"/>
 </head>
 
@@ -117,9 +118,9 @@
                         <option value="6">人力资源部</option> 
                     </select> 
                 </span>
-        </div></br></br></br>
+        </div><br/><br/><br/>
   		<div style="width:100%; margin:10px auto;">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;代理时间：<input onClick="laydate()">到<input onClick="laydate()"></br></br></br></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;代理时间<input type="text" style="width: 186px;" onClick="eye.datePicker.show(this);" />到<input type="text" style="width: 186px;" onClick="eye.datePicker.show(this);" /></br></br></br></br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="提交领导">
 		</div>
         
