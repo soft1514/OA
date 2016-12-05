@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta http-equiv=“X-UA-Compatible” content=“IE=9″>
+  <meta http-equiv=“X-UA-Compatible” content=“chrome=1"/>
+<title>主界面</title>
+  <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="../css/in" type="text/css"/>
+  <link rel="stylesheet" href="../css/Todo.css" type="text/css"/>
+  <script type="text/javascript" src="../js/menu.js"></script>
+  <script type="text/javascript" language="javascript" src="../js/eye-all.js"></script>
+  <script type="text/javascript" language="javascript" src="../js/eye-base.js"></script>
+  <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+</head>
+
+<body>
+<div id="under">
+  <!--下 右-->
+  </div>
+  <div class="right">
+  <form action="" method="post">
+        <div>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;委托人员代理我的工作:</span></br></br></br>
+            	<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;委托人员:</span>
+                <span>
+                    <input type="text"/>
+                </span>&nbsp;
+                部门:
+                <span>
+               	    <select name=""> 
+                        <option value="0">行政部</option> 
+                        <option value="1">财务部</option>
+                        <option value="3">研发部</option>
+                        <option value="4">测试部</option>
+                        <option value="5">实施部</option>
+                        <option value="6">人力资源部</option> 
+                    </select> 
+                </span>
+        </div><br/><br/><br/>
+  		<div style="width:100%; margin:10px auto;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;代理时间<input type="text" style="width: 186px;" onClick="eye.datePicker.show(this);" />到<input type="text" style="width: 186px;" onClick="eye.datePicker.show(this);" /></br></br></br></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="提交领导">
+		</div>
+        
+  </form>
+  </div>
+</div>
+</body>
+</html>

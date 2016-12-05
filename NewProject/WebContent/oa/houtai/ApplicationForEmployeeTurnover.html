@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>员工离职申请表</title>
+
+ <link type="text/css" rel="Stylesheet" href="../css/main.css" />
+<script type="text/javascript" language="javascript" src="../js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../js/eye-base.js"></script>
+    <script type="text/javascript" language="javascript" src="../js/eye-all.js"></script>
+
+</head>
+
+<body>
+	<div>
+    	<div>
+        <form id="form1" name="员工离职" method="post" action="">
+          <table width="700" border="1">
+  <caption>
+    员工离职申请表
+  </caption>
+  <tr>
+    <td>姓名
+      <input type="text" name="textfield" id="textfield" />
+      <label for="textfield"></label></td>
+    <td>工号
+    <input type="text" name="textfield" id="textfield" />
+      <label for="textfield"></label></td>
+    <td>部门
+    <select>
+    	<option>行政部</option>
+        <option>研发部</option>
+        <option>财政部</option>
+        <option>人力资源部</option>
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td>入职日期
+    <input type="text" style="width: 186px;" onClick="eye.datePicker.show(this);" />
+    </td>
+    <td>职位
+    <select>
+    	<option>员工</option>
+        <option>项目组长</option>
+        <option>副经理</option>
+        <option>总经理</option>
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td>申请日期
+   <input type="text" style="width: 186px;" onClick="eye.datePicker.show(this);" />
+   </td>
+    <td>预计离职日期
+    <input type="text" style="width: 186px;" onClick="eye.datePicker.show(this);" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+    离职类型:
+      <p align="center">
+        <label>
+          <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" />
+          辞职</label>
+        <label>
+          <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_1" />
+          辞退</label>
+        <label>
+          <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_2" />
+          自离</label>
+        <label>
+          <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_3" />
+          开除</label>
+        <label>
+          <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_4" />
+            其他</label>
+    </p>
+    
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">离职原因详述:<textarea name="离职原因详述" cols="20" rows="5" wrap="on"></textarea></td>
+  </tr>
+  <tr>
+  	<td colspan="3" align="center">
+    <input name="确定" type="submit" value="确定" />
+	<input name="取消" type="submit" value="取消" />
+    </td>
+  </tr>
+</table>
+</form>
+
+        </div>
+        <div>
+        
+        </div>
+    </div>
+</body>
+</html>

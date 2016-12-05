@@ -1,0 +1,35 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+#main {
+	width: 500px;
+	height: auto;
+}
+#top {
+	width: 100%;
+	height: auto;
+	margin-bottom: 50px;
+}
+#bottom {
+	width: 100%;
+	height: auto;
+}
+#tab {
+	display:none;
+	margin-top: 15px;
+	background-color:#F6FAFD;
+}
+tr td {
+	border: none;
+	font-size: 14px;
+	line-height: 45px;
+}
+input, select {
+	width: 200px;
+}
+.td_one {
+	padding-left: 26px;
+}
+

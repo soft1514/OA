@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>管理会议</title>
+<link href="../css/guanlihuiyi.css" rel="stylesheet" type="text/css">
+<script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="../js/guanlihuiyi.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="main">
+  <div id="top"> </div>
+  <div id="bottom">
+    <form>
+      <table id="tab" border="1px" width="450px";>
+        <input type="button" id="shen" onClick="javascript:show()" value="申请会议" style="width: 110px;"/>
+        <tr>
+          <td class="td_one">会议主题:</td>
+          <td><input type="text" style="margin-left: 20px;"></td>
+        </tr>
+        <tr>
+          <td class="td_one">开会部门:</td>
+          <td><select style="margin-left: 20px;">
+              <option>请选择</option>
+              <option></option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select></td>
+        </tr>
+        <tr>
+          <td class="td_one">主持人</td>
+          <td><select style="margin-left: 20px;">
+              <option>请选择</option>
+              <option></option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select></td>
+        </tr>
+        <tr>
+          <td class="td_one">会议地点:</td>
+          <td><select style="margin-left: 20px;">
+              <option>请选择</option>
+              <option></option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select></td>
+        </tr>
+        <tr>
+          <td class="td_one">开始时间:</td>
+          <td>
+          <select id="birth_year" onchange="setDays(this,birth_month,birth_day);" style="width:100px; margin-left: 20px;">  
+                    <option value="">年</option>  
+                      
+            </select> 
+            <select id="birth_month" onchange="setDays(birth_year,this,birth_day);" style="width:100px">  
+                    <option value="">月</option>  
+                      
+            </select> 
+            <select id="birth_day" style="width:100px">  
+                    <option value="">日</option>  
+                      
+            </select></td>  
+        </tr>
+        <tr>
+          <td class="td_one">结束时间:</td>
+          <td><input type="text" style="margin-left: 20px;"/></td>
+        </tr>
+        <tr>
+          <td class="td_one">会议内容:</td>
+          <td><textarea cols="20px" rows="5px" style="overflow-x:auto; overflow-y:auto; width: 205px; height: 50px; margin-left: 20px;"></textarea></td>
+        </tr>
+        <tr>
+        	<td class="td_one">会议室:</td>
+            <td><select style="margin-left: 20px;">
+              <option selected="selected">请选择</option>
+              <option>会议室1</option>
+              <option>会议室2</option>
+              <option>会议室3</option>
+              <option>会议室4</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class=""><input type="submit" value="检查并发送" class="td_two" style="width: 110px; margin-left: 20px;"/></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+</body>
+</html>

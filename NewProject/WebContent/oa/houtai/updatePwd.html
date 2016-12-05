@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>修改密码</title>
+<link href="../css/update.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/update.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="main">
+  <div class="top">
+    <h3>修改密码</h3>
+  </div>
+  <form id="wordForm">
+    <table border="0px">
+      <tr>
+        <td class="left">原始密码:</td>
+        <td><input type="password" id="pwd" class="inputs"/></td>
+        <td><div id="pwdId"></div></td>
+      </tr>
+      <tr>
+        <td class="left">新密码:</td>
+        <td><input type="password" id="Npwd" class="inputs"/></td>
+        <td><div id="NpwdId"></div></td>
+      </tr>
+      <tr>
+        <td class="left">请再次输入新密码:</td>
+        <td><input type="password" id="Repwd" class="inputs"/></td>
+        <td><div id="RepwdId" ></div></td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center"><input type="button" value="确定"/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="button" value="取消"/></td>
+      </tr>
+    </table>
+  </form>
+</div>
+</body>
+</html>
